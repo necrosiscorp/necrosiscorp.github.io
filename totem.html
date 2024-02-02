@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totem Request</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Totem Request</h1>
+    <form action="https://formspree.io/f/mbjnggol" method="POST">
+        <fieldset>
+            <legend>Your Information</legend>
+            <label>
+                Your Name:
+                <input type="text" name="name" required>
+            </label>
+        </fieldset>
+
+        <label for="amount">Amount of totems:</label>
+        <select id="amount" name="amount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="8">8</option>
+        </select>
+
+        <button type="submit">Send Request</button>
+    </form>
+</body>
+</html>

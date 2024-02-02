@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor Enchantment Request</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Armor Enchantment Request</h1>
+    <form action="https://formspree.io/f/mbjnggol" method="POST">
+        <fieldset>
+            <legend>Your Information</legend>
+            <label>
+                Your Name:
+                <input type="text" name="name" required>
+            </label>
+        </fieldset>
+
+        <label for="armorType">Select Armor Type:</label>
+        <select id="armorType" name="armorType">
+            <option value="netherite">Netherite</option>
+            <option value="gold">Gold</option>
+            <option value="iron">Iron</option>
+            <option value="diamond">Diamond</option>
+            <option value="leather">Leather</option>
+        </select>
+
+        <fieldset>
+            <legend>Armor Pieces</legend>
+            <label>
+                <input type="checkbox" name="armor" value="Helmet"> Helmet
+            </label>
+            <label>
+                <input type="checkbox" name="armor" value="Chestplate"> Chestplate
+            </label>
+            <label>
+                <input type="checkbox" name="armor" value="Leggings"> Leggings
+            </label>
+            <label>
+                <input type="checkbox" name="armor" value="Boots"> Boots
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enchantments</legend>
+            <label>
+                <input type="checkbox" name="enchantments" value="Protection"> Protection
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Unbreaking"> Unbreaking
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="FireProtection"> Fire Protection
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="ProjectileProtection"> Projectile Protection
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Thorns"> Thorns
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Mending"> Mending
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Aquaaffinity"> Aqua Affinity
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Depthstrider"> Depth Strider
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Resperation"> Resperation
+            </label>
+        </fieldset>
+
+        <button type="submit">Send Request</button>
+    </form>
+</body>
+</html>

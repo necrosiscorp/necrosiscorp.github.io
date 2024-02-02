@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sword Enchantment Request</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sword Enchantment Request</h1>
+    <form action="https://formspree.io/f/mbjnggol" method="POST">
+        <fieldset>
+            <legend>Your Information</legend>
+            <label>
+                Your Name:
+                <input type="text" name="name" required>
+            </label>
+        </fieldset>
+
+        <label for="swordType">Select Sword Type:</label>
+        <select id="swordType" name="swordType">
+            <option value="netherite">Netherite</option>
+            <option value="gold">Gold</option>
+            <option value="iron">Iron</option>
+            <option value="diamond">Diamond</option>
+        </select>
+
+        <fieldset>
+            <legend>Enchantments</legend>
+            <label>
+                <input type="checkbox" name="enchantments" value="Sharpness"> Sharpness
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Unbreaking"> Unbreaking
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="Mending"> Mending
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="fire"> Fire Aspect
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="looting"> Looting
+            </label>
+            <label>
+                <input type="checkbox" name="enchantments" value="knockback"> Knockback
+            </label>
+        </fieldset>
+
+        <button type="submit">Send Request</button>
+    </form>
+</body>
+</html>
